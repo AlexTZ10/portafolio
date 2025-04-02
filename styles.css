@@ -1,0 +1,259 @@
+/* Global styles */
+body {
+  font-family: "Roboto", sans-serif; /* Fuente más futurista y profesional */
+  margin: 0;
+  padding: 0;
+  background: #121212; /* Fondo oscuro */
+  color: #e0e0e0; /* Textos claros */
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1c1c;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  font-family: "Montserrat", sans-serif; /* Fuente más moderna y estilizada */
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 600; /* Peso más fuerte para un estilo llamativo */
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #ff4081; /* Rosa vibrante en hover */
+  transform: translateY(-2px);
+}
+
+nav .active {
+  color: #8c9eff; /* Azul suave para enlaces activos */
+}
+
+/* Hero section */
+#hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #00e5ff, #2196f3);
+  color: white;
+  font-size: 2.5rem; /* Aumenté el tamaño para un impacto visual */
+  font-family: "Roboto", sans-serif;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: white;
+  color: #00e5ff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: #f1f1f1;
+}
+
+/* About section */
+#about {
+  padding: 60px 20px;
+  background: #1c1c1c;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: -50px;
+}
+
+.about-text {
+  margin-bottom: 40px; /* Agrega espacio debajo del texto */
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #00e5ff;
+  font-family: "Roboto", sans-serif;
+}
+
+.about-text p {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: justify;
+}
+
+/* Projects section */
+#projects {
+  background: #2c2c2c;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  color: #00e5ff;
+  font-family: "Roboto", sans-serif;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido de cada tarjeta */
+  text-align: center;
+  border-radius: 8px;
+  background: #333;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Hace que los proyectos se ajusten en columnas flexibles */
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.project img {
+  width: 100%; /* Asegura que la imagen ocupe el 100% del espacio disponible */
+  height: 300px; /* Fija la altura para todas las imágenes */
+  object-fit: cover; /* Mantiene la relación de aspecto de la imagen sin distorsionarla */
+  border-radius: 8px; /* Puedes mantener el borde redondeado si lo deseas */
+  transition: 0.3s; /* Para un efecto suave al pasar el ratón */
+}
+
+.project img:hover {
+  transform: scale(1.05);
+}
+
+.project h3 {
+  margin: 10px 0;
+  font-size: 1.3rem; /* Aumenté el tamaño para mayor destaque */
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+
+/* Courses and Contact sections */
+#courses,
+#contact {
+  background: #1c1c1c;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#courses li {
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+#courses h2 {
+  font-size: 2.5rem;
+  color: #00e5ff;
+  font-family: "Roboto", sans-serif;
+}
+
+#courses ul,
+#contact p {
+  margin-top: 20px;
+  font-size: 1.2rem; /* Texto un poco más grande para legibilidad */
+  font-family: "Roboto", sans-serif;
+}
+
+#contact {
+  background: #2c2c2c; /* Mismo color que en la sección de proyectos */
+  padding: 40px 20px;
+  text-align: center;
+}
+#contact h2{
+    font-size: 2.5rem;
+    color: #00e5ff;
+    font-family: "Roboto", sans-serif;
+}
+
+#contact p{
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+#contact a {
+  color: #00e5ff;
+  text-decoration: none;
+  font-weight: 600; /* Peso de texto más fuerte */
+}
+
+#contact a:hover {
+  color: #ff4081; /* Rosa vibrante para hover en enlaces de contacto */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #121212;
+  color: #e0e0e0;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    margin-top: 20px; /* Agrega un margen superior a la imagen */
+  }
+
+  nav a {
+    font-size: 1rem; /* Reduce el tamaño en pantallas pequeñas */
+  }
+
+  #hero {
+    font-size: 2rem;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+}
